@@ -33,7 +33,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="flex justify-center bg-[#F5F8FF] py-12">
+    <div className="flex justify-center bg-[#F5F8FF] py-12  z-10">
       <div className="w-[90%] md:w-[90%] lg:w-[60%] grid grid-cols-1 lg:grid-cols-2 gap-8">
         {features.map((feature, index) => (
           <div

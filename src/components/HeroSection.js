@@ -1,30 +1,32 @@
 import React from 'react';
 import { FaPlay } from 'react-icons/fa'; // For the Watch Demo icon
+import circle from '../img/circle.png'
 import l1 from '../img/l1.png'
 import l2 from '../img/l2.png'
 const HeroSection = () => {
   return (
-    <div className="w-full flex flex-col lg:flex-row">
+    <div className="w-full flex flex-col lg:flex-row overflow-hidden">
       {/* Top Section */}
       <div className="w-full bg-[#F5F8FF] px-6 md:px-16 py-12 flex flex-col justify-center items-start space-y-6">
         {/* Badge */}
-        <div className="inline-block bg-white px-4 py-2 rounded-full shadow-sm">
-          <span className="text-sm font-medium">AI Powered Accounting tool</span>
+        <img className=' absolute  bg-no-repeat bg-cover ' src={circle}></img>
+        <div className="inline-block bg-white px-4 py-2 rounded-full shadow-sm z-10">
+          <span className="text-sm font-medium z-10">AI Powered Accounting tool</span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl md:text-5xl font-bold text-[#071B35] leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#071B35] leading-tight z-10">
           Manage Your <span className="text-green-600">Business Financials</span> seamlessly!
         </h1>
 
         {/* Description */}
-        <p className="text-gray-500">
+        <p className="text-gray-500 z-10">
           Make your numbers work for you—automated Accounting, bookkeeping, and real-time insights
           with seamless financial clarity, all at your command.
         </p>
 
         {/* Buttons */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 z-10">
           <button className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full text-lg">
             Get Started
           </button>
