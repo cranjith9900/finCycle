@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#F5F8FF] border-b border-gray-300 w-full">
+    <header className="bg-[#F5F8FF] border-b border-gray-300 w-full  z-10">
       <div className="flex items-center justify-between px-4 md:px-8 h-16">
         {/* Left Section: Logo + Navigation Links */}
         <div className="flex items-center space-x-8">

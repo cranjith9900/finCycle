@@ -1,28 +1,21 @@
-import '@mantine/core/styles.css';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import FeaturesSection from './components/FeaturesSection ';
-import Em from './components/em';
-import HowItWorksAndMore from './components/HowItWorksAndMore';
-import HeroSection2 from './components/HeroSection2';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import PricingCard from './components/PricingCard ';
+import Pricing from './pages/pricing';
+import Contact from './components/ContactForm';
 
-import Testimonial from './components/TestiMonials';
 function App() {
   return (
-    <div >
-         
-         <Header />
-         <Navbar/>
-        <HeroSection/>
-        <FeaturesSection/>
-        <HowItWorksAndMore/>
-        <Em/>
-        <Testimonial/>
-       <HeroSection2/>
-       
-       
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/pricing" element={<Pricing />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
